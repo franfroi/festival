@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>festival</title>
+</head>
+
+<body>
+    <div id="center">
+       <div id="clicmap"></div>
+        <div id="map"></div>
+  
+    </div>  
+
+
+<div id="infos">
+
+    <div class="form-style">
+        <form id="form_festival" name="form_festival" >
+        
+                    <div class="titre">Festival</div>
+
+            <fieldset>
+        
+                    <p> <a href="#">*<span>Minimun <br />3 caractères</span> </a> </p>
+                    <label><span class="intitule">Nom du festival *</span></label><br>
+                    <input type="text" name="name" id="name" class="change"   placeholder="Nom du festival * " tabindex="1">
+                    <div id="errorname" class="errors"></div>
+
+                                    
+
+                    <label><span class="intitule">Date de Début</span></label><br>
+                    <input type="text" name="date_deb" id="date_deb" class="change" placeholder="" tabindex="4" readonly>
+                    <div id="errordate_deb" class="errors"></div>
+
+                    <label><span class="intitule">Date de Fin</span></label><br>
+                    <input type="text" name="date_fin" id="date_fin" class="change" placeholder="" tabindex="5" readonly>
+                    <div id="errordate_fin" class="errors"></div>
+
+                    <label><span class="intitule">Logo du festival</span></label><br>
+                   
+                    <!-- <select name="select1" id="select1" onchange="change(value)">  -->
+                        <select name="select1" id="select1" onchange="change(value)"> 
+                        <option value="http://lidemfrancois.260mb.net/img/1.png" selected="selected">Logo 1</option> 
+                        <option value="http://lidemfrancois.260mb.net/img/2.png">Logo 2</option> 
+                        <option value="http://lidemfrancois.260mb.net/img/3.png">Logo 3</option> 
+                        
+                    </select> 
+                        <!-- <img src="img/1.png" id="show" />   -->
+                        <img src="http://lidemfrancois.260mb.net/img/1.png" id="show" />  
+                        <br>
+                    <label><span class="intitule">Type de Musique</span></label><br>
+
+                    <div id="flex_checkbox">
+
+                        <div><input type="checkbox" id="type_music" name="type_music" value="Alternative Music" ><span class="intitulecheckbox">Alternative Music</span>
+                        </div>
+
+                        <div><input type="checkbox" id="type_music" name="type_music" value="Blues"><span class="intitulecheckbox">Blues</span><br><br>
+                        </div>
+
+                        <div><input type="checkbox" id="type_music" name="type_music" value="Country Music"><span class="intitulecheckbox"><span>Country Music</span>
+                        </div>
+
+                        <div><input type="checkbox" id="type_music" name="type_music" value="Electronic Music"><span class="intitulecheckbox"><span>Electronic Music</span>
+                        </div>
+
+                        <div><input type="checkbox" id="type_music" name="type_music" value="Hip Hop / Rap"><span class="intitulecheckbox"><span>Hip Hop / Rap</span>
+                        </div>
+
+                        <div><input type="checkbox" id="type_music" name="type_music" value="Jazz"><span class="intitulecheckbox"><span>Jazz</span>
+                        </div>
+
+                        <div><input type="checkbox" id="type_music" name="type_music" value="R&B / Soul"><span class="intitulecheckbox"><span> R&B / Soul</span>
+                        </div>
+
+                        <div><input type="checkbox" id="type_music" name="type_music" value="Reggae"><span class="intitulecheckbox"><span>Reggae</span>
+                        </div>
+
+                        <div><input type="checkbox" id="music10" name="type_music" value="Rock"><span class="intitulecheckbox"><span>Rock</span>
+                        </div>
+                    </div>
+                        <div id="errortype_music" class="errors2"></div>
+                       <br>  
+            </fieldset>
+
+           <br>
+
+                        <input type="submit" value="Créer le Marqueur" tabindex="6"/>
+        </form>
+    </div>
+
+</div>
+
+<div id="user">
+        <div class="form-style">
+                
+                            <div class="titre">Utilisateur</div>
+        
+                    <fieldset>
+                
+                            <p> <a href="#">*<span>Minimun <br />3 caractères</span> </a> </p>
+                            <label><span class="intitule">Nom </span></label><br>
+                            <input type="text" name="userName" id="userName" class="change"   placeholder="Nom  * ">
+                            <div id="erroruserName" class="errors"></div>
+        
+                                            
+        
+                            <label><span class="intitule">Date de Début</span></label><br>
+                            <input type="text" name="Userdate_deb" id="Userdate_deb" class="change" placeholder="" readonly>
+                           
+                                <br>
+                            <label><span class="intitule">Type de Musique</span></label><br>
+        
+                            <div id="flex_checkbox">
+        
+                                <div><input type="checkbox" id="music" name="music" value="Alternative Music" ><span class="intitulecheckbox">Alternative Music</span>
+                                </div>
+        
+                                <div><input type="checkbox" id="music" name="music" value="Blues"><span class="intitulecheckbox">Blues</span><br><br>
+                                </div>
+        
+                                <div><input type="checkbox" id="music" name="music" value="Country Music"><span class="intitulecheckbox"><span>Country Music</span>
+                                </div>
+        
+                                <div><input type="checkbox" id="music" name="music" value="Electronic Music"><span class="intitulecheckbox"><span>Electronic Music</span>
+                                </div>
+        
+                                <div><input type="checkbox" id="music" name="music" value="Hip Hop / Rap"><span class="intitulecheckbox"><span>Hip Hop / Rap</span>
+                                </div>
+        
+                                <div><input type="checkbox" id="music" name="music" value="Jazz"><span class="intitulecheckbox"><span>Jazz</span>
+                                </div>
+        
+                                <div><input type="checkbox" id="music" name="music" value="R&B / Soul"><span class="intitulecheckbox"><span> R&B / Soul</span>
+                                </div>
+        
+                                <div><input type="checkbox" id="music" name="music" value="Reggae"><span class="intitulecheckbox"><span>Reggae</span>
+                                </div>
+        
+                                <div><input type="checkbox" id="music10" name="type_music" value="Rock"><span class="intitulecheckbox"><span>Rock</span>
+                                </div>
+                            </div>
+                                <div id="errortype_music" class="errors2"></div>
+                               <br>  
+                    </fieldset>
+        
+                   
+               
+
+</div>
+
+</body>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-ui/jquery-ui.min.js"></script>
+<script src="js/Festival.js"></script>
+ <script src="js/app.js"></script>
+ 
+
+<script src="js/main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIM7cnIquokGf8BT_9VESmUU7JgyGqsRk&callback=app.initMap&libraries=geometry&"
+async defer></script>
+
+</html>

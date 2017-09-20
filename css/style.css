@@ -1,0 +1,260 @@
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    margin: 3px;
+    background-color: #728A84;
+    flex-wrap: wrap;
+}
+
+ #center{
+    width: 50%;
+    margin:0;
+    
+
+} 
+
+#map{
+    width: 100%;
+    height: 80%;
+    margin:0;
+   margin-top: 100px;
+    
+}
+#user{
+    width: 50%;
+ }
+#infos{
+    width: 50%;
+ }
+h2{
+    color: #383899;
+}
+.form-style{
+    max-width: 500px;
+    padding: 10px 20px;
+    background: white;
+    margin: 10px auto;
+    padding: 20px;
+    border:  1px solid #541B96;
+    border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+   
+}
+.form-style fieldset{
+    border: none;
+}
+
+
+.form-style label {
+    font-size: 12px;
+ 
+     
+   
+}
+.form-style input[type="text"],
+.form-style input[type="date"],
+.form-style input[type="datetime"],
+.form-style input[type="email"],
+.form-style input[type="number"],
+.form-style input[type="search"],
+.form-style input[type="time"],
+.form-style input[type="url"],
+.form-style textarea,
+.form-style select {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: rgba(255,255,255,.1);
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0;
+    outline: 0;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    background-color: #e8eeef;
+    color:#8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 40px;
+    
+}
+
+.form-style input[type="checkbox"]{
+     margin-top: 10px;
+     width: 20px;
+     height:20px;
+    }
+
+ #show{
+     width: 20px;
+     height: 30px;
+     margin-top: -35px;
+     position: absolute;
+ }
+br{
+    content: "";
+    margin-bottom: 8px;
+    display: block;
+   
+}
+
+.form-style input[type="text"]:focus,
+.form-style input[type="date"]:focus,
+.form-style input[type="datetime"]:focus,
+.form-style input[type="email"]:focus,
+.form-style input[type="number"]:focus,
+.form-style input[type="search"]:focus,
+.form-style input[type="time"]:focus,
+.form-style input[type="url"]:focus,
+.form-style input[type="checkbox"]:focus,
+.form-style textarea:focus,
+.form-style select:focus
+{
+    background: rgba(230, 230, 230, 1);
+}
+
+.form-style select{
+    -webkit-appearance: menulist-button;
+    height:35px;
+    
+ 
+}
+.form-style select option{
+   
+     background-color: rgba(245, 245, 245, 1);;
+}
+   
+
+
+.form-style .titre {
+   font-size: 1.8em;
+   max-width: 500px;
+   text-align: center;
+   height: 20px;
+   color:#541B96;
+   
+}
+
+
+.form-style .intitule {
+   
+    color:#541B96;
+    font-size: 15px;
+    font-weight: bold;
+   
+ 
+
+    
+}
+
+.form-style #flex_checkbox{
+    width: 100%;
+    border: 1px solid #c3c3c3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+   
+   
+   
+}
+
+.form-style #flex_checkbox  div {
+    width: 150px;
+    
+}
+
+
+.form-style .intitulecheckbox {
+    
+     color:#282433;
+     font-size: 12px;
+     margin-left: 10px;
+  vertical-align: text-top;
+    
+     
+ }
+
+.form-style input[type="submit"],
+.form-style input[type="button"]
+{
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    margin: 0 auto;
+    background:#541B96;;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 1px solid #541B96;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+}
+.form-style input[type="submit"]:hover,
+.form-style input[type="button"]:hover
+{
+    background: #109177;
+}
+
+#name.redborder {
+border: rgba(240, 0, 0, 1) solid 1px;
+}
+#flex_checkbox.redborder {
+    border: rgba(240, 0, 0, 1) solid 1px;
+    }
+
+.errors2 {
+    color:rgba(240, 0, 0, 1);
+    font-size: 10px;
+    position: absolute;
+    height: 15px;
+    
+    }
+
+
+
+.errors {
+color:rgba(240, 0, 0, 1);
+font-size: 10px;
+position: absolute;
+ margin-top:-30px; 
+ height: 15px;
+
+}
+/* infobulle */
+a{
+    
+   
+    padding-top: 0;
+    float: right;
+    color:rgba(152, 1, 1, 1);;
+    text-decoration: none;
+    
+             
+}
+
+    a span{
+        display: none;     
+}
+    a:hover span, a:focus span{
+     display: block;
+     position:absolute; 
+     margin-left: -100px; 
+     margin-top: -25px;  
+     color: #109177;
+     background:rgba(255,255,255,.1);
+     padding:15px;
+     border-radius:3px;
+     box-shadow:0 0 2px  #109177;
+     transform:scale(0) rotate(-12deg);
+     transition:all .25s; 
+     font-size: 12px;  
+     transform:scale(1) rotate(0);        
+}
+
+
+
